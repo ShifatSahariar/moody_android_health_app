@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:background="#34495e"
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+
+            android:layout_height="wrap_content"
+            android:src="@drawable/sleepingbackground"
+            />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+    <TextView
+        android:background="#f39c12"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingRight="10dp"
+
+        android:layout_centerHorizontal="true"
+        android:text="You Slept 4.5 Hours."
+        android:textColor="#ffffff"
+
+        android:gravity="center"
+        android:textStyle="bold"
+
+
+        android:textSize="20sp"
+        android:id="@+id/sleepHours"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:background="#ecf0f1"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingRight="10dp"
+
+        android:layout_centerHorizontal="true"
+        android:text="You Slept Good and \n You awake at 4.50 \n Reason was scared"
+        android:textColor="#7f8c8d"
+        android:gravity="center"
+
+
+        android:textSize="15sp"
+        android:id="@+id/Sleep_Type_Info_Others"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:background="#d35400"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingRight="10dp"
+
+        android:layout_centerHorizontal="true"
+        android:text="Your Mood Was Good"
+        android:textColor="#ffffff"
+        android:gravity="center"
+
+
+        android:textSize="20sp"
+        android:id="@+id/moodInformation"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:background="#2c3e50"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingRight="10dp"
+
+            android:layout_centerHorizontal="true"
+            android:text="You made Exercise at Morning. \n You Workout Hard."
+            android:textColor="#ffffff"
+            android:gravity="center"
+
+
+            android:textSize="15sp"
+            android:id="@+id/exerciseInformation"
+            />
+    </LinearLayout>
+
+</LinearLayout>

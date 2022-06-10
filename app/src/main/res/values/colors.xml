@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#D4AF37</color>
+    <color name="colorPrimaryDark">#D4AF37</color>
+    <color name="colorAccent">#603550</color>
+    <color name="brandActionColor">#FF8C69 </color>
+    <color name="backActionColor">#FFA783</color>
+    <color name="income">#FF8C69</color>
+    <color name="expense">#CACCCE</color>
+    <color name="graph">#69A9A3</color>
+    <color name="red">#DF0A0A</color>
+    <color name="editTextBG">#DADADA</color>
+    <color name="white">#FFFFFF</color>
+    <color name="transparent">#00000000</color>
+    <color name="textColor">#6e6e6e</color>
+    <color name="radiobutton">#f39c12</color>
+    <color name="radiobuttonbefore">#ecf0f1</color>
+    <color name="colorSleepPrimary">#34495e</color>
+
+</resources>

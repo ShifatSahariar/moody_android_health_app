@@ -1,0 +1,592 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SleepTracker"
+    android:background="@drawable/backgroundsleepingfeature">
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            app:cardCornerRadius="10dp"
+            android:paddingBottom="10dp"
+            app:cardElevation="3dp"
+            app:cardPreventCornerOverlap="false"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/linearLayout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#2c3e50"
+                    android:gravity="center"
+
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="SLEEP DIARY"
+                        android:textColor="@color/white"
+                        android:textSize="22sp" />
+
+                    <ImageView
+                        android:id="@+id/calenderdatapick"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+
+                        android:background="@drawable/circle"
+                        android:padding="10dp"
+                        android:src="@drawable/calendericon"
+                         />
+                    <TextView
+                        android:background="#50ecf0f1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:gravity="center"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="Click Calender Icon \n to choose Date you forgot to make note !"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        android:layout_marginBottom="10dp"/>
+
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@+id/linearLayout1"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="-10dp"
+                    android:rotation="45"
+                    android:src="@drawable/square" />
+                <LinearLayout
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_below="@+id/linearLayout1"
+                    android:orientation="horizontal"
+                    android:id="@+id/innterL"
+                    >
+
+                    <RelativeLayout
+
+                        android:id="@+id/sleepRelative1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+
+                        android:layout_below="@+id/imageView1"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="30dp">
+                        <TextView
+                            android:layout_width="match_parent"
+
+                            android:layout_height="wrap_content"
+                            android:text="Went to Bed"
+
+                            android:gravity="center"
+                            android:textSize="15sp"
+                            android:id="@+id/sampletext1"
+                            android:background="#bdc3c7"
+                            android:textColor="@color/colorSleepPrimary"
+
+                            />
+
+                        <ImageView
+                            android:id="@+id/imgView_userIcon"
+                            android:layout_width="40dp"
+                            android:layout_below="@+id/sampletext1"
+                            android:layout_height="40dp"
+                            android:background="@color/colorSleepPrimary"
+                            android:padding="8dp"
+                            android:src="@drawable/clockicon"
+                            android:tint="@color/white" />
+
+                        <EditText
+                            android:focusable="false"
+                            android:layout_below="@+id/sampletext1"
+                            android:id="@+id/wentTimeBedField"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/imgView_userIcon"
+
+                            android:layout_toRightOf="@+id/imgView_userIcon"
+                            android:background="@color/editTextBG"
+                            android:hint="00:00"
+                            android:paddingLeft="20dp"
+                            android:textSize="20sp" />
+
+                    </RelativeLayout>
+                    <RelativeLayout
+
+                        android:id="@+id/sleepRelative2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_toRightOf="@+id/sleepRelative1"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="30dp">
+                        <TextView
+                            android:layout_width="match_parent"
+
+                            android:layout_height="wrap_content"
+                            android:text="Woke Up"
+
+                            android:gravity="center"
+                            android:textSize="15sp"
+                            android:id="@+id/sampletext2"
+                            android:background="#bdc3c7"
+                            android:textColor="@color/colorSleepPrimary"
+
+                            />
+
+                        <ImageView
+                            android:id="@+id/imgView_userIcons"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_below="@+id/sampletext2"
+                            android:background="@color/colorSleepPrimary"
+                            android:padding="8dp"
+                            android:src="@drawable/clockicon"
+                            android:tint="@color/white" />
+
+                        <EditText
+                            android:focusable="false"
+                            android:id="@+id/wokeUpTimeField"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/imgView_userIcons"
+                            android:layout_below="@+id/sampletext2"
+                            android:layout_toRightOf="@+id/imgView_userIcons"
+                            android:background="@color/editTextBG"
+                            android:hint="00:00"
+                            android:paddingLeft="20dp"
+                            android:textSize="20sp" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+
+
+
+                <LinearLayout
+                    android:layout_marginBottom="10dp"
+                    android:orientation="vertical"
+                    android:id="@+id/relativeLayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/innterL"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="15dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="How well you slept?"
+                        android:padding="5dp"
+                        android:gravity="center"
+                        android:textSize="15sp"
+                        android:background="#bdc3c7"
+                        android:textColor="@color/colorSleepPrimary"
+                        android:layout_marginBottom="5dp"
+
+
+                        />
+
+                    <RadioGroup
+                        android:id="@+id/radioGroupSleep"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center"
+
+
+                        >
+
+
+                        <RadioButton
+
+                            android:id="@+id/sleptSuper"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/alignment_selector"
+                            android:button="@color/colorPrimaryDark"
+                            android:paddingLeft="12dp"
+                            android:paddingTop="3dp"
+                            android:paddingRight="12dp"
+                            android:paddingBottom="3dp"
+                            android:text="Super"
+
+                            android:onClick="onSleepSelected" />
+
+                        <RadioButton
+
+                            android:id="@+id/sleptGood"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/alignment_selector"
+                            android:button="@color/colorPrimaryDark"
+                            android:paddingLeft="12dp"
+                            android:paddingTop="3dp"
+                            android:paddingRight="12dp"
+                            android:paddingBottom="3dp"
+                            android:text="Good"
+                            android:onClick="onSleepSelected" />
+                        <RadioButton
+                            android:id="@+id/sleptBad"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/alignment_selector"
+                            android:button="@color/colorPrimaryDark"
+                            android:checked="true"
+                            android:paddingLeft="12dp"
+                            android:paddingTop="3dp"
+                            android:paddingRight="12dp"
+                            android:paddingBottom="3dp"
+                            android:text="Bad"
+
+                            android:onClick="onSleepSelected" />
+
+                        <RadioButton
+                            android:id="@+id/sleptPain"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/alignment_selector"
+                            android:button="@color/colorPrimaryDark"
+                            android:paddingLeft="12dp"
+                            android:paddingTop="3dp"
+                            android:paddingRight="12dp"
+                            android:paddingBottom="3dp"
+                            android:text="Painful"
+                            android:onClick="onSleepSelected" />
+
+
+
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/relativeLayout2"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:orientation="horizontal"
+                    android:id="@+id/awakeLayout"
+                    >
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+
+                        android:id="@+id/awakeLayoutleft"
+                        >
+                        <TextView
+                            android:layout_width="match_parent"
+
+                            android:layout_height="wrap_content"
+                            android:text="Awake during the night"
+                            android:padding="5dp"
+
+                            android:gravity="center"
+                            android:textSize="13sp"
+
+                            android:background="#bdc3c7"
+                            android:layout_marginBottom="5dp"
+                            android:textColor="@color/colorSleepPrimary"
+
+                            />
+                        <EditText
+                            android:focusable="false"
+                            android:id="@+id/awaketimefield"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/imgView_userIcons"
+                            android:layout_below="@+id/sampletext2"
+                            android:layout_toRightOf="@+id/imgView_userIcons"
+                            android:background="@color/editTextBG"
+                            android:hint="00:00"
+                            android:layout_gravity="center"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="5dp"
+                            android:paddingLeft="20dp"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+
+                        android:id="@+id/awakeLayoutright"
+                        >
+                        <TextView
+                            android:layout_width="match_parent"
+
+                            android:layout_height="wrap_content"
+                            android:text="Reason for Awake "
+                            android:padding="5dp"
+
+                            android:gravity="center"
+                            android:textSize="13sp"
+
+                            android:background="#bdc3c7"
+                            android:layout_marginBottom="5dp"
+                            android:textColor="@color/colorSleepPrimary"
+
+                            />
+                        <Spinner
+                            android:id="@+id/awakereasonselecspinner"
+                            android:layout_width="match_parent"
+                            android:paddingLeft="10dp"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="5dp"
+                            android:background="@color/radiobutton"
+                            android:spinnerMode="dropdown"
+                            android:layout_height="wrap_content"
+                            android:entries="@array/awake_type_arrays"
+                            android:prompt="@string/choose_awake_type" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginBottom="8dp"
+                    android:orientation="vertical"
+                    android:id="@+id/relativeLayout3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/awakeLayout"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="15dp">
+                    <TextView
+                        android:layout_width="match_parent"
+
+                        android:layout_height="wrap_content"
+                        android:text="How was your Mood ?"
+                        android:padding="5dp"
+
+                        android:gravity="center"
+                        android:textSize="15sp"
+
+                        android:background="#bdc3c7"
+                        android:layout_marginBottom="5dp"
+                        android:textColor="@color/colorSleepPrimary"
+
+                        />
+                    <RadioGroup
+                        android:id="@+id/radioGroup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center"
+
+
+                        >
+
+
+                        <RadioButton
+
+
+
+                            android:id="@+id/superhappy"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/alignment_selector"
+                            android:button="@drawable/superhappy1"
+                            android:checked="true"
+
+                            android:onClick="onMoodSelected" />
+
+                        <RadioButton
+
+                            android:id="@+id/somehowhappy"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/alignment_selector"
+                            android:button="@drawable/somehowhappy1"
+                            android:onClick="onMoodSelected" />
+
+                        <RadioButton
+                            android:id="@+id/meamood"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/alignment_selector"
+                            android:button="@drawable/meh1"
+                            android:onClick="onMoodSelected" />
+
+                        <RadioButton
+                            android:id="@+id/sadmood"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/alignment_selector"
+                            android:button="@drawable/sad1"
+                            android:onClick="onMoodSelected" />
+
+                        <RadioButton
+                            android:id="@+id/depressedmood"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/alignment_selector"
+                            android:button="@drawable/depressed1"
+                            android:onClick="onMoodSelected" />
+
+
+                    </RadioGroup>
+
+
+
+
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/relativeLayout3"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:orientation="horizontal"
+                    android:id="@+id/exerciselayout"
+                    >
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+
+                        android:id="@+id/exerciselayoutleft"
+                        >
+                        <TextView
+                            android:layout_width="match_parent"
+
+                            android:layout_height="wrap_content"
+                            android:text="Exercise Time"
+                            android:padding="5dp"
+
+                            android:gravity="center"
+                            android:textSize="13sp"
+
+                            android:background="#bdc3c7"
+                            android:layout_marginBottom="5dp"
+                            android:textColor="@color/colorSleepPrimary"
+
+                            />
+                        <Spinner
+                            android:id="@+id/exercisespinnertime"
+                            android:layout_width="match_parent"
+                            android:paddingLeft="10dp"
+                            android:paddingBottom="5dp"
+                            android:paddingTop="5dp"
+                            android:background="@color/radiobutton"
+                            android:layout_height="wrap_content"
+                            android:entries="@array/exercise_time_arrays"
+                            android:prompt="@string/choose_exercise_time" />
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+
+                        android:id="@+id/exerciselayoutright"
+                        >
+                        <TextView
+                            android:layout_width="match_parent"
+
+                            android:layout_height="wrap_content"
+                            android:text="Exercise Type"
+                            android:padding="5dp"
+
+                            android:gravity="center"
+                            android:textSize="13sp"
+
+                            android:background="#bdc3c7"
+                            android:layout_marginBottom="5dp"
+                            android:textColor="@color/colorSleepPrimary"
+
+                            />
+                        <Spinner
+                            android:id="@+id/exercisespinner"
+                            android:layout_width="match_parent"
+                            android:paddingLeft="10dp"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="5dp"
+                            android:background="@color/radiobutton"
+                            android:spinnerMode="dropdown"
+                            android:layout_height="wrap_content"
+                            android:entries="@array/exercise_type_arrays"
+                            android:prompt="@string/choose_exercise_type" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_signUp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/exerciselayout"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#34495e"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="SAVE"
+                    android:onClick="onSubmit"
+                    android:textColor="@color/white" />
+
+
+
+            </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
+    </ScrollView>
+</RelativeLayout>

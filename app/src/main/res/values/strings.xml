@@ -1,0 +1,64 @@
+<resources>
+    <string name="app_name">MOODY</string>
+    <string name="choose_exercise_type">Exercise Type</string>
+    <string name="choose_exercise_time">Exercise Time</string>
+    <string name="choose_awake_type">Awake Type</string>
+
+
+    <string name="Extreme_hard">Extreme hard</string>
+
+    <string name="Light">Light</string>
+    <string name="Moderate">Moderate</string>
+    <string name="Hard">Hard</string>
+    <string-array name="exercise_type_arrays">
+        <item>No Exercise</item>
+        <item>Light</item>
+        <item>Moderate</item>
+        <item>Hard</item>
+        <item>Extreme hard</item>
+
+    </string-array>
+    <string name="Nothing">No Exercise</string>
+
+    <string name="Morning">Morning</string>
+    <string name="Noon">Noon</string>
+    <string name="Afternoon">Afternoon</string>
+    <string name="Evening">Evening</string>
+    <string name="Night">Night</string>
+
+    <string-array name="exercise_time_arrays">
+        <item>No Exercise</item>
+        <item>Morning</item>
+        <item>Noon</item>
+        <item>Afternoon</item>
+        <item>Evening</item>
+        <item>Night</item>
+
+    </string-array>
+
+    <string name="Anxiety">Anxiety</string>
+    <string name="Breathing_trouble">Breathing trouble</string>
+    <string name="Digestive_problem">Digestive problem</string>
+    <string name="Pain">Pain</string>
+    <string name="Peeing_a_lot">Peeing a lot</string>
+    <string name="Scared">Scared</string>
+    <string name="Stressed">Stressed</string>
+    <string name="Hormones">Hormones</string>
+
+
+    <string-array name="awake_type_arrays">
+        <item>REASONS</item>
+        <item>Anxiety</item>
+
+        <item>Breathing trouble</item>
+        <item>Digestive problem</item>
+
+        <item>Pain</item>
+        <item>Peeing a lot</item>
+        <item>Scared</item>
+        <item>Stressed</item>
+        <item>Hormones</item>
+
+
+    </string-array>
+</resources>

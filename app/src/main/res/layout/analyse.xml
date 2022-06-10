@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SelfTest.analysePage">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/setDoctorPhoto"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:src="@drawable/fearfear"/>
+        <TextView
+            android:layout_marginBottom="50dp"
+            android:id="@+id/headline"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="0dp"
+            android:text="Serious Depression"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="35sp"
+
+            android:textColor="#2c3e50"/>
+    <TextView
+        android:layout_marginBottom="50dp"
+        android:id="@+id/overallAnalysis"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:text="I am good"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:textColor="#d35400"
+        android:textSize="20sp"/>
+        <Button
+            android:id="@+id/btn_batkthomHome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/exerciselayout"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="15dp"
+            android:background="#34495e"
+            android:fontFamily="sans-serif-medium"
+            android:text="BACK TO HOME"
+            android:onClick="backToHomeButton"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:layout_marginBottom="50dp"
+            android:id="@+id/reference"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="0dp"
+            android:text="Based on ICD-10 / V (F); © Prof. Hegerl"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="15sp"
+
+            android:textColor="#bdc3c7"/>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
